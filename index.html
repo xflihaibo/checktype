@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>类型检测</title>
+</head>
+<body>
+    <h1>类型检测</h1>
+</body>
+</html>
+<script src='./src/index.js'></script>
+<script>
+    window.onload=function(){
+       console.log( typeCheck.init('hello world'))
+       console.log( typeCheck.init(true))
+       console.log( typeCheck.init(1234))
+       console.log( typeCheck.init([1,3,4]))
+       console.log( typeCheck.init({a:'12',b:"12"}))
+       
+       // let a;
+       //  console.log( typeCheck.init(a))
+
+        console.log(typeCheck.init('hello world','string'))
+        console.log(typeCheck.init(true,'boolean'))
+        console.log(typeCheck.init(1234,'number'))
+
+         console.log( typeCheck.init([1,2,3],'array',true))
+         console.log( typeCheck.init([],'array',true))
+
+         console.log( typeCheck.init({a:'12',b:"12"},'object',true))
+         console.log( typeCheck.init({},'object',true))
+    }
+</script>

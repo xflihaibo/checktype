@@ -1,0 +1,25 @@
+{
+  "name": "checktype",
+  "version": "1.0.0",
+  "description": "类型检测",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest ",
+    "test:report": "jest  --coverage"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": ["javascript"],
+  "author": "silenceli",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@~lisfan/validation": "^1.0.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "x-type-check": "0.0.1"
+  }
+}
