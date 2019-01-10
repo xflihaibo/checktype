@@ -1,7 +1,7 @@
 # 类型检测
 
 <div align=center>
-<img src="./Image/logo.png" width="160px" align="center"  />
+<img src="./Image/logo.jpeg" width="160px" align="center"  />
 </div>
 
 一个简单轻巧的 javascript 类型检测库,欢迎 👏👏fork
