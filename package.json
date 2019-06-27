@@ -4,11 +4,11 @@
   "description": "类型检测",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest ",
+    "test:jest": "jest ",
     "test:report": "jest  --coverage --coverageDirectory=testreport",
     "test-reportone": "jest --testResultsProcessor=jest-stare ",
     "test:docs": "node_modules/.bin/jsdoc -c jsdoc.json",
-    "test:all": "jest  --coverage --coverageDirectory=testreport && jest --testResultsProcessor=jest-stare "
+    "test": "jest  --coverage --coverageDirectory=testreport  --testResultsProcessor=jest-stare "
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,6 @@
   "dependencies": {
     "jest-stare": "^1.16.0"
   },
-  "reporters": ["default", "jest-stare"],
   "jest-stare": {
     "resultDir": "testreport/report",
     "resultJson": "data.json",
