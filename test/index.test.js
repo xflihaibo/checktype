@@ -18,3 +18,6 @@ describe('测试 init() 方法', function() {
         expect(typeCheck.init({}, 'object', true)).toBe(false);
     });
 });
+
+// "resultDir": "onepiece",  //设置报表输出目录
+// "resultJson": "data.json" //设置报表输出json 名称

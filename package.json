@@ -1,11 +1,18 @@
 {
-  "name": "checktype",
+  "name": "js-checktype",
   "version": "1.0.0",
   "description": "类型检测",
   "main": "src/index.js",
   "scripts": {
     "test": "jest ",
-    "test:report": "jest  --coverage"
+    "test:report": "jest  --coverage --coverageDirectory=testreport",
+    "test-reportone": "jest --testResultsProcessor=jest-stare ",
+    "test:docs": "node_modules/.bin/jsdoc -c jsdoc.json",
+    "test:all": "jest  --coverage --coverageDirectory=testreport && jest --testResultsProcessor=jest-stare "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Silence520/checktype.git"
   },
   "directories": {
     "test": "test"
@@ -19,7 +26,19 @@
     "@~lisfan/validation": "^1.0.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
+    "docdash": "^1.0.3",
     "jest": "^23.6.0",
+    "jsdoc": "^3.5.5",
     "x-type-check": "0.0.1"
+  },
+  "dependencies": {
+    "jest-stare": "^1.16.0"
+  },
+  "reporters": ["default", "jest-stare"],
+  "jest-stare": {
+    "resultDir": "testreport/report",
+    "resultJson": "data.json",
+    "resultHtml": "index.html",
+    "coverageLink": "../lcov-report/index.html"
   }
 }
