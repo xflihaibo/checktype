@@ -27,7 +27,9 @@
   "directories": {
     "test": "test"
   },
-  "keywords": ["javascript"],
+  "keywords": [
+    "javascript"
+  ],
   "author": "silenceli",
   "license": "ISC",
   "devDependencies": {
