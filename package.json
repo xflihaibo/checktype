@@ -9,7 +9,7 @@
     "test-reportone": "jest --testResultsProcessor=jest-stare ",
     "test:docs": "node_modules/.bin/jsdoc -c jsdoc.json",
     "test": "jest  --coverage --coverageDirectory=testreport  --testResultsProcessor=jest-stare ",
-    "precommit": "echo \" this is githooks \""
+    "precommit": "npm run test:jest"
   },
   "repository": {
     "type": "git",
