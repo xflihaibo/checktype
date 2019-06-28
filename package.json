@@ -11,6 +11,11 @@
     "test": "jest  --coverage --coverageDirectory=testreport  --testResultsProcessor=jest-stare ",
     "precommit": "echo \" this is hoost \""
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo \" this is husky---- 6666 \""
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:Silence520/checktype.git"
@@ -28,6 +33,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "docdash": "^1.0.3",
+    "husky": "^2.7.0",
     "jest": "^23.6.0",
     "jsdoc": "^3.5.5",
     "x-type-check": "0.0.1"
