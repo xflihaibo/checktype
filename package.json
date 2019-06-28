@@ -11,9 +11,6 @@
     "test": "jest  --coverage --coverageDirectory=testreport  --testResultsProcessor=jest-stare ",
     "precommit": "npm run jest"
   },
-  "pre-commit": {
-    "run": "test"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "npm test",
@@ -27,9 +24,7 @@
   "directories": {
     "test": "test"
   },
-  "keywords": [
-    "javascript"
-  ],
+  "keywords": ["javascript"],
   "author": "silenceli",
   "license": "ISC",
   "devDependencies": {
