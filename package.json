@@ -9,7 +9,7 @@
     "test-reportone": "jest --testResultsProcessor=jest-stare ",
     "test:docs": "node_modules/.bin/jsdoc -c jsdoc.json",
     "test": "jest  --coverage --coverageDirectory=testreport  --testResultsProcessor=jest-stare ",
-    "pre-commit": "echo \" this is sumblit \""
+    "precommit": "echo \" this is sumblit \""
   },
   "repository": {
     "type": "git",
