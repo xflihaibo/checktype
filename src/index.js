@@ -5,11 +5,7 @@
  * @since   2019-06-27T15:26:02+0800
  */
 (function() {
-    var root =
-        (typeof self == 'object' && self.self === self && self) ||
-        (typeof global == 'object' && global.global === global && global) ||
-        this ||
-        {};
+    var root = (typeof self == 'object' && self.self === self && self) || (typeof global == 'object' && global.global === global && global) || this || {};
 
     var typeCheck = function(obj) {
         if (obj instanceof typeCheck) return obj;
@@ -17,11 +13,7 @@
         this.typeCheckwrapped = obj;
     };
     if (typeof exports != 'undefined' && !exports.nodeType) {
-        if (
-            typeof module != 'undefined' &&
-            !module.nodeType &&
-            module.exports
-        ) {
+        if (typeof module != 'undefined' && !module.nodeType && module.exports) {
             exports = module.exports = typeCheck;
         }
         exports.typeCheck = typeCheck;
@@ -64,7 +56,7 @@
                 },
                 array: function(value) {
                     return value.length > 0;
-                },
+                }
             };
             return objType[type](value);
         } else {
@@ -85,19 +77,14 @@
      */
     typeCheck.init = function() {
         let type = typeOfFun(arguments[0]);
-        let oldType = arguments[1]
-            ? arguments[1].replace(/\s+/g, '').toLowerCase()
-            : '';
+        let oldType = arguments[1] ? arguments[1].replace(/\s+/g, '').toLowerCase() : '';
         switch (arguments.length) {
             case 1:
                 return type;
             case 2:
                 return type === oldType;
             case 3:
-                return (
-                    type === oldType &&
-                    requiredFun(arguments[0], type, arguments[2])
-                );
+                return type === oldType && requiredFun(arguments[0], type, arguments[2]);
             default:
                 break;
         }

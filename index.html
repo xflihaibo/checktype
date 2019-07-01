@@ -6,31 +6,35 @@
 </head>
 <body>
     <h1>类型检测</h1>
+    <button id='print' > 打印</button>
 </body>
 </html>
-<script src='./src/index.js'></script>
+<!-- <script src='./src/index.js'></script> -->
+<script src="./print.js"></script>
 <script>
     window.onload=function(){
+      document.getElementById('print').onclick=function(argument) {
+        printTable()
+      }
 
-
-      // console.error('init')
-       console.log( 'hello world:'+typeCheck.init('hello', 'String'))
-       console.log( 'hello world:'+typeCheck.init('hello world'))
-       console.log( 'true:'+typeCheck.init(true))
-       console.log( '1234:'+typeCheck.init(1234))
-       console.log( '[1,2,3]:'+typeCheck.init([1,3,4]))
-       console.log('{a:"12",b:"12"}'+ typeCheck.init({a:'12',b:"12"}))
-       console.log('undefined:'+ typeCheck.init(undefined))
-       console.log('null:'+ typeCheck.init(null))
+      // // console.error('init')
+      //  console.log( 'hello world:'+typeCheck.init('hello', 'String'))
+      //  console.log( 'hello world:'+typeCheck.init('hello world'))
+      //  console.log( 'true:'+typeCheck.init(true))
+      //  console.log( '1234:'+typeCheck.init(1234))
+      //  console.log( '[1,2,3]:'+typeCheck.init([1,3,4]))
+      //  console.log('{a:"12",b:"12"}'+ typeCheck.init({a:'12',b:"12"}))
+      //  console.log('undefined:'+ typeCheck.init(undefined))
+      //  console.log('null:'+ typeCheck.init(null))
        
     
-      console.error('init:bool')
-      console.log('hello world:'+typeCheck.init('hello world','string'))
-      console.log('true:'+typeCheck.init('0','string',true))
-      console.log('1234:'+typeCheck.init(1,'number',true))
-      console.log( '[1,2,3]:'+typeCheck.init([1,2,3],'array',true))
-      console.log( '[]:'+typeCheck.init([],'array',true))
-      console.log( typeCheck.init({a:'12',b:"12"},'object',true))
-      console.log( typeCheck.init({},'object', true))
+      // console.error('init:bool')
+      // console.log('hello world:'+typeCheck.init('hello world','string'))
+      // console.log('true:'+typeCheck.init('0','string',true))
+      // console.log('1234:'+typeCheck.init(1,'number',true))
+      // console.log( '[1,2,3]:'+typeCheck.init([1,2,3],'array',true))
+      // console.log( '[]:'+typeCheck.init([],'array',true))
+      // console.log( typeCheck.init({a:'12',b:"12"},'object',true))
+      // console.log( typeCheck.init({},'object', true))
     }
 </script>
