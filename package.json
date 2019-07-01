@@ -8,9 +8,9 @@
     "test:report": "jest  --coverage --coverageDirectory=testreport",
     "test-reportone": "jest --testResultsProcessor=jest-stare ",
     "test:docs": "node_modules/.bin/jsdoc -c jsdoc.json",
-    "test":
-      "jest  --coverage --coverageDirectory=testreport  --testResultsProcessor=jest-stare ",
-    "eslint": "eslint   --ext  .js src"
+    "test": "jest  --coverage --coverageDirectory=testreport  --testResultsProcessor=jest-stare ",
+    "eslint": "eslint  --fix  --ext  .js src",
+    "prettier":"prettier --write"
   },
   "husky": {
     "hooks": {
@@ -22,7 +22,9 @@
     "type": "git",
     "url": "git@github.com:Silence520/checktype.git"
   },
-  "keywords": ["javascript"],
+  "keywords": [
+    "javascript"
+  ],
   "author": "silenceli",
   "license": "ISC",
   "devDependencies": {
@@ -34,11 +36,13 @@
     "babel-jest": "^23.6.0",
     "docdash": "^1.0.3",
     "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "husky": "^2.7.0",
     "jest": "^23.6.0",
     "jsdoc": "^3.5.5",
     "pre-commit": "^1.2.2",
+    "prettier": "^1.18.2",
     "x-type-check": "0.0.1"
   },
   "dependencies": {

@@ -4,19 +4,18 @@ module.exports = {
         commonjs: true,
         es6: true,
     },
-
     parser: 'babel-eslint',
     parserOptions: {
         ecmaFeatures: {
             experimentalObjectRestSpread: true,
-            jsx: true,
         },
         sourceType: 'module',
     },
-
+    plugins: ["prettier"],
     root: true,
+   extends: ["prettier"],
     rules: {
-        'prettier/prettier': 'error',
+         'prettier/prettier': 'error',
         //缩进4空格
         // indent: [ 'error' , 4 ] ,
         //强制单引号 可以使用es6模板语法
@@ -52,32 +51,48 @@ module.exports = {
         //不许对象内有重复的key
         'no-dupe-keys': 'error',
         //强制jsx为双引号
-        'jsx-quotes': 'error',
+        // 'jsx-quotes': 'error',
         //禁止类中成员重复出现
         'no-dupe-class-members': 'error',
+        //禁用 debugger
+        'no-debugger':'error',
+        //  禁止正则表达式字面量中出现多个空格
+        'no-regex-spaces':'error',
+        //禁止不必要的分号
+        'no-extra-semi':'error',
+        //禁止使用多个空格
+        'no-multi-spaces':'error',
+        // 禁止出现多行空行
+        'no-multiple-empty-lines':'error',
+        //强制在逗号前后使用一致的空格
+        'comma-spacing':'error',
+        // 要求或禁止文件末尾存在空行
+        'eol-last':'error',
+        //禁用行尾空格
+        'no-trailing-spaces':'error'
         //react
-        //禁止render 不返回jsx
-        'react/require-render-return': 'error',
-        //组件必须引用react
-        'react/react-in-jsx-scope': 'error',
-        //使用的组件必须引入
-        'react/jsx-no-undef': 'error',
-        //启动react 变量使用,
-        'react/jsx-uses-react': 'error',
-        //启动react 组件变量使用,
-        'react/jsx-uses-vars': 'error',
-        //标签必须对齐 或者 平行
-        'react/jsx-closing-tag-location': 'error',
-        //多行闭合标签 必须新起一行
-        'react/jsx-closing-bracket-location': 'error',
-        //无内容必须自闭合
-        'react/self-closing-comp': 'error',
-        //render方法 返回多行标签时 必须使用括号包围
-        'react/jsx-wrap-multilines': 'error',
+        // //禁止render 不返回jsx
+        // 'react/require-render-return': 'error',
+        // //组件必须引用react
+        // 'react/react-in-jsx-scope': 'error',
+        // //使用的组件必须引入
+        // 'react/jsx-no-undef': 'error',
+        // //启动react 变量使用,
+        // 'react/jsx-uses-react': 'error',
+        // //启动react 组件变量使用,
+        // 'react/jsx-uses-vars': 'error',
+        // //标签必须对齐 或者 平行
+        // 'react/jsx-closing-tag-location': 'error',
+        // //多行闭合标签 必须新起一行
+        // 'react/jsx-closing-bracket-location': 'error',
+        // //无内容必须自闭合
+        // 'react/self-closing-comp': 'error',
+        // //render方法 返回多行标签时 必须使用括号包围
+        // 'react/jsx-wrap-multilines': 'error',
     },
-    settings: {
-        react: {
-            pragma: 'React',
-        },
-    },
+    // settings: {
+    //     react: {
+    //         pragma: 'React',
+    //     },
+    // },
 };
