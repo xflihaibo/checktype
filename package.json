@@ -22,9 +22,6 @@
     "type": "git",
     "url": "git@github.com:Silence520/checktype.git"
   },
-  "directories": {
-    "test": "test"
-  },
   "keywords": ["javascript"],
   "author": "silenceli",
   "license": "ISC",
