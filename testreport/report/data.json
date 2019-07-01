@@ -24,7 +24,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1561726852365,
+  "startTime": 1561960670564,
   "success": true,
   "testResults": [
     {
@@ -34,8 +34,8 @@
       "numPassingTests": 1,
       "numPendingTests": 0,
       "perfStats": {
-        "end": 1561726853077,
-        "start": 1561726852832
+        "end": 1561960671249,
+        "start": 1561960671003
       },
       "snapshot": {
         "added": 0,

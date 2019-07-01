@@ -10,12 +10,11 @@
     "test:docs": "node_modules/.bin/jsdoc -c jsdoc.json",
     "test":
       "jest  --coverage --coverageDirectory=testreport  --testResultsProcessor=jest-stare ",
-    "eslint": "eslint   --ext  .js src",
-    "precommit": "eslint   --ext  .js src"
+    "eslint": "eslint   --ext  .js src"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test",
+      "pre-commit": "npm run eslint",
       "pre-push": "npm test"
     }
   },
