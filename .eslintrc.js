@@ -33,7 +33,7 @@ module.exports = {
         //不准比较自身
         'no-self-compare': 'error',
         // 变量声明了 必须使用
-        'no-unused-vars': ['warn', { vars: 'all', args: 'after-used' }],
+        'no-unused-vars': ['error', { vars: 'all', args: 'after-used' }],
         //禁止对参数重新赋值
         'no-param-reassign': 'error',
         //禁止使用var

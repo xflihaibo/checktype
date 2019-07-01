@@ -12,11 +12,8 @@
     "eslint": "eslint  --fix  --ext  .js src",
     "prettier":"prettier --write"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run eslint",
-      "pre-push": "npm run eslint"
-    }
+  "pre-commit": {
+    "run": "eslint"
   },
   "repository": {
     "type": "git",
