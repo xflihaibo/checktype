@@ -8,9 +8,9 @@
     "test:report": "jest  --coverage --coverageDirectory=testreport",
     "test-reportone": "jest --testResultsProcessor=jest-stare ",
     "test:docs": "node_modules/.bin/jsdoc -c jsdoc.json",
-    "test": "jest  --coverage --coverageDirectory=testreport  --testResultsProcessor=jest-stare ",
+    "test": "jest   --coverage  --coverageDirectory=testreport  --testResultsProcessor=jest-stare ",
     "eslint": "eslint  --fix  --ext  .js src",
-    "prettier":"prettier --write"
+    "prettier": "prettier --write"
   },
   "pre-commit": {
     "run": "eslint"
@@ -19,9 +19,7 @@
     "type": "git",
     "url": "git@github.com:Silence520/checktype.git"
   },
-  "keywords": [
-    "javascript"
-  ],
+  "keywords": ["javascript"],
   "author": "silenceli",
   "license": "ISC",
   "devDependencies": {

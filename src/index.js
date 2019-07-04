@@ -5,9 +5,9 @@
  * @since   2019-06-27T15:26:02+0800
  */
 (function() {
-    var root = (typeof self == 'object' && self.self === self && self) || (typeof global == 'object' && global.global === global && global) || this || {};
+    let root = (typeof self == 'object' && self.self === self && self) || (typeof global == 'object' && global.global === global && global) || this || {};
 
-    var typeCheck = function(obj) {
+    let typeCheck = function(obj) {
         if (obj instanceof typeCheck) return obj;
         if (!(this instanceof typeCheck)) return new typeCheck(obj);
         this.typeCheckwrapped = obj;
