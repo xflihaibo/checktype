@@ -24,7 +24,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1562238752245,
+  "startTime": 1562642851408,
   "success": true,
   "testResults": [
     {
@@ -34,8 +34,8 @@
       "numPassingTests": 1,
       "numPendingTests": 0,
       "perfStats": {
-        "end": 1562238754473,
-        "start": 1562238753378
+        "end": 1562642852543,
+        "start": 1562642852206
       },
       "snapshot": {
         "added": 0,
@@ -52,7 +52,7 @@
           "ancestorTitles": [
             "测试 init() 方法"
           ],
-          "duration": 5,
+          "duration": 7,
           "failureMessages": [],
           "fullName": "测试 init() 方法 类型检测",
           "location": null,
